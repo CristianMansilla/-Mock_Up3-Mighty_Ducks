@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+:root{
+    --font: 'Combo', cursive;
+    --brown: #211915;
+    --black: black;
+    --yellow: #eac42e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: var(--font);
+    background-color: #ecc0aa86;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--brown);
+}
+
+a:hover{
+    color: rgba(221, 134, 20, 0.85);
+}
+
+a:active{
+    color: rgb(17,164,184);
+}
+
+
+/*? Header */
+/** General para todas las páginas **/
+.container{
+    padding: 0.5em;
+    display: flex;
+    background-color: var(--black);
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.3em;
+    padding-left: 0.5em;
+}
+
+.navbar a{
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid red;
+}
+
+.navbar a:focus{
+    color:var(--yellow);
+}
+/*? Fin Header */
+
+
+/*? Main */
+/** General **/
+.hero, .hero-contact{
+    background: rgb(143,58,180);
+    background: linear-gradient(90deg, rgba(143,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,216,69,1) 100%);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5em;
+}
+
+.tittle{
+    font-size: 3.5em;
+    padding: 0.5em;
+}
+
+.img-container img{
+    width: 51em;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 0.5em;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.container-subtittle{
+    max-height: 5em;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.subtittle{
+    width: 40%;
+    background-color: black;
+}
+
+.subtittle h2{
+    font-size: 2em;
+    color: white;
+}
+
+/** Index **/
+.card{
+    background-color: rgba(221, 134, 20, 0.85);
+    width: 17em;
+    height: 7em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.8);
+}
+
+.term{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/** About MDHL **/
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.banner i{
+    font-size: 3em;
+}
+
+.lista{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.container-list{
+    width: 20em;
+    height: 20em;
+    padding: 1em;
+    background-color: #ac57bdde;
+    border-radius: 5px;
+    box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.8);
+}
+
+.definicion_evento{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    padding-left: 1em;
+}
+
+.termino{
+    font-weight: bold;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+}
+
+.sangria{
+    padding-left: 1em;
+}
+
+.definicion{
+    margin-bottom: 1.5em;
+}
+
+/** Contact **/
+.hero-contact{
+    margin-bottom: -5em;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+}
+
+.mail{
+    margin: 1em 0;
+}
+
+.subtittle-contact{
+    width: 45%;
+    background-color: black;
+}
+
+.subtittle-contact h2{
+    margin-bottom: 1em;
+    font-size: 5em;
+    color: white;
+}
+
+.contact p{
+    font-size: 2em;
+}
+/*? Fin Main */
+
+/*? Footer */
+footer{
+    height: 5em;
+    background-color: rgba(0, 0, 0, 0.906);
+    margin-top: 2em;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+/*? Fin Footer */
