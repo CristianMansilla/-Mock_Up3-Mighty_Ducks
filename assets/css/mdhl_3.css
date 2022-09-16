@@ -5,6 +5,7 @@
     --brown: #211915;
     --black: black;
     --yellow: #eac42e;
+    --violet: #8f3ab4;
 }
 
 *{
@@ -22,10 +23,7 @@ body{
 
 a{
     text-decoration: none;
-}
-
-a:visited{
-    color: var(--brown);
+    color: white;
 }
 
 a:hover{
@@ -78,7 +76,7 @@ a:active{
 /*? Main */
 /** General **/
 .hero, .hero-contact{
-    background: rgb(143,58,180);
+    background: var(--violet);
     background: linear-gradient(90deg, rgba(143,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,216,69,1) 100%);
     width: 100%;
     height: 120vh;
@@ -89,7 +87,7 @@ a:active{
     margin-bottom: 5em;
 }
 
-.tittle{
+.title{
     font-size: 3.5em;
     padding: 0.5em;
 }
@@ -105,18 +103,18 @@ a:active{
     width: 80px;
 }
 
-.container-subtittle{
+.container-subtitle{
     max-height: 5em;
     text-align: center;
     margin-bottom: 5em;
 }
 
-.subtittle{
+.subtitle{
     width: 40%;
     background-color: black;
 }
 
-.subtittle h2{
+.subtitle h2{
     font-size: 2em;
     color: white;
 }
@@ -160,9 +158,10 @@ a:active{
     width: 20em;
     height: 20em;
     padding: 1em;
-    background-color: #ac57bdde;
+    background-color: var(--violet);
     border-radius: 5px;
     box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.8);
+    color: white;
 }
 
 .definicion_evento{
@@ -187,22 +186,34 @@ a:active{
 
 /** Contact **/
 .hero-contact{
-    margin-bottom: -5em;
+    margin-bottom: -2.4em;
     justify-content: flex-start;
     align-items: center;
     padding: 1em;
+}
+
+.contact{
+    color: white;
+}
+
+.icon{
+    color: #daea2e;
+}
+
+.contact-tel:hover, .contact-mail:hover{
+    color: aqua;
 }
 
 .mail{
     margin: 1em 0;
 }
 
-.subtittle-contact{
+.subtitle-contact{
     width: 45%;
     background-color: black;
 }
 
-.subtittle-contact h2{
+.subtitle-contact h2{
     margin-bottom: 1em;
     font-size: 5em;
     color: white;
@@ -215,11 +226,22 @@ a:active{
 
 /*? Footer */
 footer{
-    height: 5em;
+    height: 7em;
     background-color: rgba(0, 0, 0, 0.906);
     margin-top: 2em;
     color: white;
     padding: 2em;
     text-align: center;
+    font-size: 1.2em;
+}
+
+.redesContacto{
+    color: white;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
 /*? Fin Footer */
